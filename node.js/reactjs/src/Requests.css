@@ -1,0 +1,81 @@
+
+
+.requests-content {
+  padding: 20px;
+  width: 100%;
+  margin-left: 250px;
+  margin-top: 100px;
+}
+
+
+.requests-page h3 {
+  color: #343a40;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.requests-page p {
+  color: #6c757d;
+  font-size: 1rem;
+}
+.request-list .error-message {
+  color: #dc3545;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.request-list p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-top: 20px;
+}
+.card-text
+{
+  margin-left: 100px;
+}
+/* Card and button styles */
+.request-item.card {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  
+}
+
+.request-item.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+/* Notification message styling */
+.notification-message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745; /* Success color */
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it's on top of other content */
+  opacity: 0;
+  animation: fadeInOut 3s forwards; /* Fade-in and fade-out animation */
+}
+
+/* Keyframe for fade-in and fade-out */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

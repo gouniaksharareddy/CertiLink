@@ -1,0 +1,54 @@
+.top-div {
+  position: fixed; /* Keeps the top-div fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Stretches across the entire screen */
+  height: 70px;
+  background-color: #0d3eb0; /* Professional blue color */
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  /*z-index: 10;  Ensures it stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds slight shadow for separation */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed; /* Keeps the sidebar fixed on the left */
+  top: 70px; /* Pushes the sidebar below the top-div */
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 70px); /* Full height minus the top-div height */
+  background-color: #0d3eb0;
+  display: flex;
+  flex-direction: column; /* Stacks links vertically */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 5; /* Ensures it's below the top-div */
+  overflow-y: auto; /* Enables scrolling if content exceeds the viewport */
+}
+
+/* Sidebar Links */
+.sidebar a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: background 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #007bff;
+}
+
+.sidebar a.mt-auto {
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding-top: 20px;
+}

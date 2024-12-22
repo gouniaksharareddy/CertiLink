@@ -1,0 +1,84 @@
+.pending-content {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light gray background */
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  margin-left: 250px; /* Adjust for sidebar width */
+  margin-top: 70px;
+}
+
+.pending-page h3 {
+  color: #343a40; /* Dark gray for the title */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pending-page p {
+  color: #6c757d; /* Subtle gray for descriptive text */
+  font-size: 1rem;
+}
+
+/* Card style for pending requests */
+.pending-page .pending-item.card {
+  border: 1px solid #dee2e6; /* Light border */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a professional look */
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effects */
+}
+
+.pending-page .pending-item.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.pending-page .pending-item .card-body {
+  padding: 20px;
+}
+
+.pending-page .pending-item .card-title {
+  color: #17a2b8; /* Bootstrap info color */
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.pending-page .pending-item .card-text {
+  margin-bottom: 10px;
+  color: #495057; /* Dark gray for text */
+}
+
+/* Button styles */
+.pending-page .pending-item .btn {
+  font-size: 0.875rem; /* Small buttons */
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.pending-page .pending-item .btn-success {
+  background-color: #28a745; /* Bootstrap success color */
+  border-color: #28a745;
+}
+
+.pending-page .pending-item .btn-success:hover {
+  background-color: #218838; /* Darker shade for hover */
+  border-color: #1e7e34;
+}
+
+.pending-page .pending-item .btn-warning {
+  background-color: #ffc107; /* Bootstrap warning color */
+  border-color: #ffc107;
+  color: #212529; /* Dark text for contrast */
+}
+
+.pending-page .pending-item .btn-warning:hover {
+  background-color: #e0a800; /* Darker shade for hover */
+  border-color: #d39e00;
+}
+
+/* No pending requests message */
+.pending-page .pending-list p {
+  color: #6c757d; /* Subtle gray */
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 20px;
+} 

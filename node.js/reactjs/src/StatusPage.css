@@ -1,0 +1,101 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+/* Apply Page Styles */
+.apply-section {
+    margin-top: 70px; /* Space below the fixed navbar */
+    padding: 20px;
+    min-height: calc(100vh - 70px); /* Ensure the section takes the full viewport height minus navbar height */
+}
+
+.apply-section .info-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.apply-section h1 {
+    color: #3a6186;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.apply-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Form Section */
+.form-section {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 70%; /* Adjust the form width */
+}
+
+.form-section .form-group {
+    margin-bottom: 20px;
+}
+
+.form-section label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-section input:focus,
+.form-section select:focus,
+.form-section textarea:focus {
+    border-color: #3a6186;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-section .btn-primary {
+    background-color: #3a6186; /* Primary color */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.form-section .btn-primary:hover {
+    background-color: #2a4d66; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight hover effect */
+}
+
+.form-section .btn-primary:active {
+    transform: translateY(0);
+}

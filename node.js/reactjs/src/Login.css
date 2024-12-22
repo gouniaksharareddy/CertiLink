@@ -1,0 +1,278 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+/* CertiLink Title Bar */
+.certilink-title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0d3eb0;
+    color: #ffffff;
+    padding: 20px 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Layout Container */
+.container-fluid {
+    padding-top: 80px; /* Space for the title bar */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.text {
+    color: #0d3eb0;
+}
+
+#login {
+    color: #0d3eb0;
+}
+
+/* Information Section */
+.info-section {
+    background-color: #ecf0f3;
+    padding: 50px;
+    border-right: 2px solid #ddd;
+    box-shadow: inset -5px 0 10px rgba(0, 0, 0, 0.05);
+    width: 60%;
+    border-radius: 8px;
+    animation: fadeInLeft 1.5s ease;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Global Background Image */
+body {
+    background-image: url('background.jpg'); /* Path to your image in the public folder */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Retain your font styles */
+}
+  
+.info-section h1 {
+    color: #0d3eb0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info-section p,
+.info-section ul {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.info-section li {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    font-weight: 500;
+}
+
+.info-section li::before {
+    content: "✔ ";
+    color: #0d3eb0;
+    margin-right: 10px;
+}
+
+/* Login Card */
+.login-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: zoomIn 1s ease-in-out;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.login-card h3 {
+    color: #0d3eb0;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-card .form-label {
+    font-weight: 600;
+}
+
+.login-card input[type="email"],
+.login-card input[type="password"] {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    transition: box-shadow 0.3s ease;
+}
+
+.login-card input[type="email"]:focus,
+.login-card input[type="password"]:focus {
+    outline: none;
+    border-color: #0d3eb0;
+    box-shadow: 0 0 5px rgba(137, 37, 62, 0.4);
+}
+
+.login-card .btn-primary {
+    background: #0d3eb0;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.4s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.login-card .btn-primary:hover {
+    background: #0d3eb0;
+}
+
+.login-card a {
+    color: #3a6186;
+    text-decoration: none;
+}
+
+.login-card a:hover {
+    text-decoration: underline;
+}
+
+/* Forgot Password Card */
+.forgot-password-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: zoomIn 1s ease-in-out;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.forgot-password-card h5 {
+    color: #0d3eb0;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.forgot-password-card .form-label {
+    font-weight: 600;
+}
+
+.forgot-password-card input[type="email"] {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    transition: box-shadow 0.3s ease;
+}
+
+.forgot-password-card input[type="email"]:focus {
+    outline: none;
+    border-color: #0d3eb0;
+    box-shadow: 0 0 5px rgba(137, 37, 62, 0.4);
+}
+
+.forgot-password-card .btn-primary {
+    background: #0d3eb0;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.4s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.forgot-password-card .btn-primary:hover {
+    background: #0d3eb0;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .info-section {
+        width: 100%;
+        padding: 20px;
+        animation: none;
+    }
+
+    .login-card {
+        padding: 30px;
+        width: 100%;
+    }
+
+    .forgot-password-card {
+        padding: 30px;
+        width: 100%;
+    }
+
+    .container-fluid {
+        flex-direction: column;
+        padding-top: 60px;
+    }
+}

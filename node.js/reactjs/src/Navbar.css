@@ -1,0 +1,75 @@
+/* General Reset for NavBar */
+header {
+    background-color: #0d3eb0; 
+    padding: 5px 0; 
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2); /* Add depth with shadow */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Space between logo and nav links */
+    height: 90px; /* Set a fixed height for the navbar */
+    margin-bottom: 0;
+}
+
+/* Container for logo and links */
+header .container {
+    width: 100%; /* Ensure full-width layout */
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-between; /* Spread logo and links */
+    align-items: center; /* Center vertically */
+}
+
+/* Styling for clickable links (both logo and nav links) */
+header a {
+    color: white; /* White text for contrast */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.1rem; /* Slightly smaller font for reduced height */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+header a:hover {
+    color: #f0e68c; /* Light yellow on hover for contrast */
+}
+
+/* Navigation links inside the NavBar */
+nav {
+    display: flex; /* Flexbox for horizontal arrangement */
+    align-items: center; /* Vertical alignment */
+}
+
+nav a {
+    margin: 0 10px; /* Spacing between navigation links */
+    font-size: 10rem; /* Standard font size */
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 700; /* Medium weight for links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #f0e68c; /* Highlight on hover */
+}
+
+/* Active Link Styling */
+nav .active {
+    font-weight: bold; /* Make active link bold */
+    text-decoration: underline; /* Underline active link */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack logo and nav vertically */
+        padding: 10px; /* Adjust padding for mobile */
+        height: auto; /* Allow height to adjust on mobile */
+    }
+
+    nav {
+        margin-top: 10px; /* Add spacing below logo/title */
+        justify-content: center; /* Center nav links */
+    }
+
+    nav a {
+        margin: 5px; /* Reduce spacing between links for smaller screens */
+    }
+}

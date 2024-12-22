@@ -1,0 +1,99 @@
+/* General Styles */
+.container {
+  padding: 20px;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #343a40;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #6c757d;
+  text-align: justify;
+}
+
+/* List Styling for Offerings */
+.offerings {
+  margin-top: 20px;
+  padding-left: 20px;
+  margin-left: 50px;
+}
+
+.offerings li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.offerings strong {
+  color: #007bff;
+}
+
+/* Text Section Styling */
+.text-section {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.text-section h2 {
+  font-size: 2rem;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #f8f9fa;
+  font-size: 0.9rem;
+  padding: 10px 0;
+  text-align: center;
+  color: #6c757d;
+  margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .text-section {
+    padding: 15px;
+  }
+
+  .text-section h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .offerings li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-section {
+    padding: 10px;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  .offerings li {
+    font-size: 0.85rem;
+  }
+}

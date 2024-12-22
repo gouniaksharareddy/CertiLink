@@ -1,0 +1,106 @@
+/* Ensure content starts below the navbar */
+.apply-section {
+    padding-top: 100px; /* Add top padding slightly more than the navbar height */
+    padding: 20px;
+}
+
+/* General content styling */
+.apply-section .info-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.apply-section h1 {
+    color: #3a6186;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.apply-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Form Styling */
+.form-section {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 70%;
+}
+
+.form-section .form-group {
+    margin-bottom: 20px;
+}
+
+.form-section label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-section .btn-primary {
+    background-color: #3a6186;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.form-section .btn-primary:hover {
+    background-color: #2a4d66;
+    transform: translateY(-2px);
+}
+
+.form-section .btn-primary:active {
+    transform: translateY(0);
+}
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  /* Styling for the status message */
+.status-message {
+    color: green;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #28a745;
+  }
+  
+  .status-message.error {
+    color: #dc3545; /* Red color for error messages */
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  
