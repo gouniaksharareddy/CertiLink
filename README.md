@@ -107,9 +107,9 @@ Once approved, user receives E-mail notification
 | Password  | admin001             | Default admin password         |
 | Email     | example@gmail.com    | For receiving notifications (optional) |
 
-👩‍💻 Developers
-KONDAKINDI SNEHA REDDY,
-GOUNI AKSHARA REDDY,
+👩‍💻 Developers<br>
+KONDAKINDI SNEHA REDDY<br>
+GOUNI AKSHARA REDDY<br>
 SHAHEDA SAMREEN
 
 This project is licensed for educational use only.  
