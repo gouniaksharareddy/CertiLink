@@ -106,8 +106,8 @@ Once approved, user receives E-mail notification
 | Email     | example@gmail.com    | For receiving notifications (optional) |
 
 👩‍💻 Developers
-KONDAKINDI SNEHA REDDY
-GOUNI AKSHARA REDDY
+KONDAKINDI SNEHA REDDY,
+GOUNI AKSHARA REDDY,
 SHAHEDA SAMREEN
 
 This project is licensed for educational use only.  
