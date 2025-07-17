@@ -1,4 +1,5 @@
-🎓 CertiLink
+<h1 align="center">🎓 CertiLink: A Smart Certificate Application and Approval System</h1>
+
 
 CertiLink is a web-based platform that enables college students to apply for official certificates online, track their request status, and receive E-mail notifications when their applications are processed. It simplifies and digitizes the certificate issuing workflow for both students and administrators.
 
@@ -27,6 +28,7 @@ CertiLink is a web-based platform that enables college students to apply for off
 
 
 📁 Project Structure
+```
 CertiLink/
 │
 ├── backend/
@@ -51,7 +53,7 @@ CertiLink/
 │
 ├── README.md
 └── package.json
-
+```
 ---
 ⚙️ Installation
 1. Clone the Repo
