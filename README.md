@@ -22,9 +22,9 @@
 |----------------|------------------------|
 | Frontend       | React.js, CSS          |
 | Backend        | Node.js, Express.js    |
-| Database       | Firebase / JSON / MySQL|
+| Database       | MONGODB                |
 | Notifications  | Email-to-SMS Gateway   |
-| Deployment     | Localhost / LAN Server |
+| Deployment     | Localhost              |
 
 ---
 
