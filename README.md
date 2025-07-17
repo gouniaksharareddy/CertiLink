@@ -134,18 +134,6 @@ Message: Your certificate request has been completed. Please collect it from the
 
 ---
 
-## 📸 Screenshots *(Optional)*
-
-> Add screenshots inside the `/screenshots` folder and reference them below.
-
-```markdown
-![Login Page](screenshots/login.png)
-![Student Dashboard](screenshots/student_dashboard.png)
-![Admin Panel](screenshots/admin_panel.png)
-```
-
----
-
 ## 👩‍🎓 Developed By
 
 **Sneha**  
