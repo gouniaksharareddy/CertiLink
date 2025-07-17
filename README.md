@@ -136,7 +136,7 @@ Message: Your certificate request has been completed. Please collect it from the
 
 ## 👩‍🎓 Developed By
 
-**Sneha**  
+**KONDAKINDI SNEHA REDDY** 
 Student Developer | Creator of CertiLink  
 📫 For queries, collaborations, or contributions, contact via GitHub or official college channels.
 
