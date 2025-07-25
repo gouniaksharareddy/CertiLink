@@ -57,7 +57,7 @@ CertiLink/
 ---
 ⚙️ Installation
 1. Clone the Repo
-git clone https://github.com/your-username/CertiLink.git
+git clone https://github.com/gouniaksharareddy/CertiLink.git
 cd CertiLink
 
 #Set Up Backend
@@ -108,8 +108,8 @@ Once approved, user receives E-mail notification
 | Email     | example@gmail.com    | For receiving notifications (optional) |
 
 👩‍💻 Developers<br>
-KONDAKINDI SNEHA REDDY<br>
 GOUNI AKSHARA REDDY<br>
+KONDAKINDI SNEHA REDDY<br>
 SHAHEDA SAMREEN
 
 This project is licensed for educational use only.  
