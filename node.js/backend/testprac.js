@@ -1,3 +1,55 @@
+
+
+import express from 'express';
+import mongoose from'mongoose';
+const app=express();
+app.use(express.json());
+mongoose.connect('mongodb://127.0.0.1:27017/prac',{useNewUrlParser:true,useUnifiedTopology:true})
+.then(()=>console.log("connected"))
+.catch(err=>console.log("no"));
+const schema=new mongoose.Schema({
+   /* username:{type:String,unique:true},
+    email:{type:String,match:/^[^\s@]+@[^\s@]+.[^\s@]+$/},
+    password:{type:String,minlength:8}
+    */
+   bookid:Number,
+   title:String,
+   author:String,
+   genre:String,
+   publicationdate:Date,
+   availablecopies:Number
+
+})
+const users=await mongoose.model('users',schema);
+app.get('/',(req,res)=>{
+    res.send("welcome guys");
+})
+app.get('/emps',async(req,res)=>{
+    const a=await users.find();
+    res.send(a);
+})
+app.post('/emps',async(req,res)=>{
+    const empl=new users(req.body);
+    await empl.save();
+    res.send("updated");
+})
+app.put('/emps',async(req,res)=>{
+    const{bookid}=req.params;
+    const{genre}=req.body;
+    const newb=await newb.findOneAndUpdate({bookid:bookid},{genre:genre},{new:true});
+    res.json({message:"succes",users:newb});
+})
+app.get('/emps',async(req,res)=>{
+    const re=await users.findManyAndDelete({publicationdate:{$lt:'2000-01-01'}});
+    res.json({message:"deleted"});
+
+})
+const port=3000;
+app.listen(port,()=>{
+    console.log(`server is running on http://localhost:${port}`);
+
+})
+
 /*const express = require('express');
 const app=express();
 const mongoose = require('mongoose');
@@ -149,53 +201,34 @@ const port=3000;
 app.listen(port,()=>{
     console.log(`server is running on http://localhost:${port}`);
 })
+
+# Use OpenJDK as base image
+
+FROM openjdk:17-jdk-alpine
+
+# Set working directory inside the container
+WORKDIR /app
+
+# Copy the built JAR file into the container
+COPY target/MyJavaProject0.0.1-SNAPSHOT.jar app.jar
+
+# Command to run the jar
+CMD ["java", "-jar", "app.jar"]
+
+
+# Use Tomcat base image
+FROM tomcat:10.1-jdk17
+
+# Remove default webapps
+RUN rm -rf /usr/local/tomcat/webapps/*
+
+# Copy your WAR file into Tomcat's webapps folder
+COPY target/SmartAssessmentHub.war /usr/local/tomcat/webapps/ROOT.war
+
+# Expose Tomcat port
+EXPOSE 8080
+
+# Start Tomcat
+CMD ["catalina.sh", "run"]
+
     */
-
-import express from 'express';
-import mongoose from'mongoose';
-const app=express();
-app.use(express.json());
-mongoose.connect('mongodb://127.0.0.1:27017/prac',{useNewUrlParser:true,useUnifiedTopology:true})
-.then(()=>console.log("connected"))
-.catch(err=>console.log("no"));
-const schema=new mongoose.Schema({
-   /* username:{type:String,unique:true},
-    email:{type:String,match:/^[^\s@]+@[^\s@]+.[^\s@]+$/},
-    password:{type:String,minlength:8}
-    */
-   bookid:Number,
-   title:String,
-   author:String,
-   genre:String,
-   publicationdate:Date,
-   availablecopies:Number
-
-})
-const users=await mongoose.model('users',schema);
-app.get('/',(req,res)=>{
-    res.send("welcome guys");
-})
-app.get('/emps',async(req,res)=>{
-    const a=await users.find();
-    res.send(a);
-})
-app.post('/emps',async(req,res)=>{
-    const empl=new users(req.body);
-    await empl.save();
-    res.send("updated");
-})
-app.put('/emps',async(req,res)=>{
-    const{bookid}=req.params;
-    const{genre}=req.body;
-    const newb=await newb.findOneAndUpdate({bookid:bookid},{genre:genre},{new:true});
-    res.json({message:"succes",users:newb});
-})
-app.get('/emps',async(req,res)=>{
-    const re=await users.findManyAndDelete({publicationdate:{$lt:'2000-01-01'}});
-    res.json({message:"deleted"});
-
-})
-const port=3000;
-app.listen(port,()=>{
-    console.log(`server is running on http://localhost:${port}`);
-})
