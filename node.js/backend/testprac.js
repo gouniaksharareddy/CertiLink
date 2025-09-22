@@ -230,5 +230,17 @@ EXPOSE 8080
 
 # Start Tomcat
 CMD ["catalina.sh", "run"]
+docker build -t mjp-app
+docker run --name mjp-container mjp-app
+docker pull redis 
+docker run --name redis-container -d redis 
+
+docker build -t smarthub-image .
+docker run -d -p 8080:8080 --name smarthub-container smarthub-image
+docker login
+docker tag smarthub-image your-dockerhub-username/smarthub-image:v1
+docker push your-dockerhub-username/smarthub-image:v1
+
 
     */
+
