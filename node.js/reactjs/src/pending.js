@@ -105,4 +105,45 @@ const Pending = () => {
   );
 };
 
+
 export default Pending;
+/*
+# Use OpenJDK as base image
+
+FROM openjdk:17-jdk-alpine
+
+# Set working directory inside the container
+WORKDIR /app
+
+# Copy the built JAR file into the container
+COPY target/MyJavaProject0.0.1-SNAPSHOT.jar app.jar
+
+# Command to run the jar
+CMD ["java", "-jar", "app.jar"]
+
+
+# Use Tomcat base image
+FROM tomcat:10.1-jdk17
+
+# Remove default webapps
+RUN rm -rf /usr/local/tomcat/webapps/*
+
+# Copy your WAR file into Tomcat's webapps folder
+COPY target/SmartAssessmentHub.war /usr/local/tomcat/webapps/ROOT.war
+
+# Expose Tomcat port
+EXPOSE 8080
+
+# Start Tomcat
+CMD ["catalina.sh", "run"]
+docker build -t mjp-app
+docker run --name mjp-container mjp-app
+docker pull redis 
+docker run --name redis-container -d redis 
+
+docker build -t smarthub-image .
+docker run -d -p 8080:8080 --name smarthub-container smarthub-image
+docker login
+docker tag smarthub-image your-dockerhub-username/smarthub-image:v1
+docker push your-dockerhub-username/smarthub-image:v1
+*/
