@@ -1,0 +1,8 @@
+sudo apt update
+sudo apt-get install docker.io
+sudo apt install git
+sudo apt install nano
+>>clone repo
+in repo>> docker file
+sudo docker build -t mywebapp
+sudo docker run -d -p 9090:8080 mywebapp
