@@ -1,0 +1,10 @@
+docker pull jasonrivers/nagios
+docker run -d --name nagios -p 8088:80 jasonrivers/nagios:latest
+
+minikube start --driver=docker
+docker login
+kubectl craete deployment mynginx -image=nginx
+kubectl get deployment/pods
+kubectl expose service --type=NodePort --port=80 --target-port=80 --name=mynginx
+kubectl get service mynginx
+kubectl port-forward service/mynginx 8088:80
