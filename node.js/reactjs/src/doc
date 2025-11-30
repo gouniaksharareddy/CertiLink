@@ -1,0 +1,12 @@
+
+  FROM redis:latest
+  CMD['redis-server']
+
+docker build -t app .
+docker run --name myapp -d app
+docker commit contid usernae/name
+
+
+  docker pull redis
+  docker run --name myredis -d redis 
+  docker exec -it myredis redis-cli
