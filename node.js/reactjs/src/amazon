@@ -7,5 +7,13 @@ in repo>> docker file
 sudo docker build -t mywebapp
 sudo docker run -d -p 9090:8080 mywebapp
 
-FROM tomact:9-jdk11
-COPY target//.war /usr/local/tomcat/webapps
+FROM tomcat:9.0
+
+# Remove default webapps
+RUN rm -rf /usr/local/tomcat/webapps/*
+
+# Copy your WAR file to Tomcat webapps as ROOT.war
+COPY target/*.war /usr/local/tomcat/webapps/ROOT.war
+
+# Correct Tomcat startup command
+CMD ["catalina.sh", "run"]
